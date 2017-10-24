@@ -1,4 +1,4 @@
-class ItensQuery
+class ItemsQuery
   def self.retrieve(completed_at: nil)
     return Item.where(completed_at: nil) unless completed_at
 

@@ -2,9 +2,9 @@ class ItensController < ApplicationController
   def index
     render json: {
       data: {
-        todays_itens: ItensQuery.retrieve.map(&:to_h),
-        yesterdays_itens: ItensQuery.retrieve(completed_at: Date.yesterday).map(&:to_h),
-        todays_complete_itens: ItensQuery.retrieve(completed_at: Date.today).map(&:to_h),
+        todays_itens: ItemsQuery.retrieve.map(&:to_h),
+        yesterdays_itens: ItemsQuery.retrieve(completed_at: Date.yesterday).map(&:to_h),
+        todays_complete_itens: ItemsQuery.retrieve(completed_at: Date.today).map(&:to_h),
       }
     }
   end
