@@ -29,6 +29,14 @@ Run the app
 $ rails s
 ```
 
+## Testing
+
+This project uses [Rspec Rails](https://github.com/rspec/rspec-rails). To run the test suit, you just need to:
+
+```shell
+$ rspec
+```
+
 ## API documentation
 
 `GET itens`
@@ -103,4 +111,3 @@ Response:
   }
 }
 ```
-
